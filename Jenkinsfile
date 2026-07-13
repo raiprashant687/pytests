@@ -17,7 +17,7 @@ pipeline {
                     python3 -m venv venv
                     . venv/bin/activate
                     pip install --upgrade pip
-                    if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install pytest; fi
+                    if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install pytest requests; 
                 '''
             }
         }
